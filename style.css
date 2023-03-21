@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* MENU SIDEBAR*/
+
+#sidebar,
+#content {
+    height: 100vh;
+    overflow: hidden;
+    float: left;
+    transition: width .35s;
+}
+
+#sidebar {
+    background-color: #141414;
+    width: 300px;
+}
+
+#sidebar nav ul li {
+    padding: 20px;
+    background-color: #111;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+#sidebar nav ul li a {
+    color: #fff;
+}
+
+#sidebar.fechar {
+    width: 0;
+}
+
+#sidebar.fechar+#content {
+    width: 100%;
+}
+
+#content {
+    background-color: #ededed;
+    width: calc(100% - 300px);
+}
+
+#btn {
+    color: #fff;
+    background-color:black;
+    position: static;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 30px;
+    padding: 5px;
+}
+
+/*JOGO DA VELHA*/
+
+.fundo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(320deg, #77323e, #000000);
+}
+
+h2{
+    text-align: center;
+    margin-top: 10px;
+    color: white!important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.363);
+}
+
+#indicaVez{
+    color: rgb(255, 255, 255);
+    font-size: 1.3em;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#tabuleiro{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto;
+}
+
+
+.campo{
+    width: 99px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    cursor: pointer;
+}
+
+
+.esquerda{
+    border-right: 2px solid black;
+}
+
+.centro{
+    border-right: 2px solid black;
+}
+
+
+#esquerda1, #centro1, #direita1{
+    border-bottom: 2px solid black;
+}
+
+
+#esquerda2, #centro2, #direita2{
+    border-bottom: 2px solid black;
+}
+
+
+#placar{
+    margin: 10px auto;
+    width: 300px;
+    background-color: aliceblue;
+    text-align: center;
+    padding: 10px;
+}
+
+#placar .pontos{
+
+    padding: 5px;
+    border: 1px solid green;
+}
