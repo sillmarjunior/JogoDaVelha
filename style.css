@@ -46,6 +46,12 @@
     width: calc(100% - 300px);
 }
 
+h1{
+    color: #fff;
+    display: inherit;
+    text-align: center;
+}
+
 #btn {
     color: #fff;
     background-color:black;
